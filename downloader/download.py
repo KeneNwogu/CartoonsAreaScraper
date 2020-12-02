@@ -18,6 +18,7 @@ def download(download_link, folder_name):
     length = request.headers["Content-length"]
     length_bytes = int(length)
     length = int(length) / (1024 ** 2)
+    
     print("Total:", length, "mb")
 
     start = 0
